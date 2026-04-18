@@ -661,6 +661,25 @@
     .fade-up:nth-child(4) { transition-delay: 0.3s; }
 
     /* ── RESPONSIVE ── */
+
+@media (max-width: 1400px) {
+  #hero {
+    grid-template-columns: 1.2fr 0.8fr; 
+  }
+  
+  .hero-left {
+    padding: 6rem 3rem; 
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 5vw, 4.5rem); 
+  }
+  
+  #about {
+    gap: 3rem;
+  }
+}
+
     @media (max-width: 900px) {
       nav { padding: 1.2rem 2rem; }
       nav .nav-links { display: none; }
